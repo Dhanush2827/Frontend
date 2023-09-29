@@ -10,3 +10,11 @@ mat-form-fiels{
 mat-hint{
     color:red;
 }
+
+.toolbar-container {
+    background-image: url('../../assets/img/11.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+  }

@@ -111,8 +111,12 @@ body {
   display: flex;
   align-items: right;
   justify-content:center;
-  background-color: #0aec15;
+  //background-color: #0aec15;
+  background-image: url('../../assets/img/14.jfif'); /* Replace with the actual path to your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 
 nav {
   display: flex;
@@ -167,6 +171,8 @@ a {
   ul li a {
     margin-left: 0px;
     color: #ffffff;
+    margin-right: 20px; 
+
 
   }
 }
@@ -233,3 +239,4 @@ a {
   padding: 20px;
   text-align: center;
 }
+

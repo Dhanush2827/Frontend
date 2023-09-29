@@ -41,6 +41,11 @@ body {
   }
   
   .container {
+    background-image: url('../../assets/img/7.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     padding: 0 16px;
   }
   
@@ -78,3 +83,11 @@ body {
       display: block;
     }
   }
+
+  body {
+    background-image: url('../../assets/img/6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
