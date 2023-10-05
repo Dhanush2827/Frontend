@@ -110,7 +110,7 @@ export class ManageProductComponent implements OnInit {
     this.productService.delete(id).subscribe((response:any)=>{
       this.ngxService.stop();
       this.tableData();
-      this.responseMessage = response.error?.message;
+      this.responseMessage = response?.message;
       this.snackbarService.openSnackBar(this.responseMessage,"success");
     },(error)=>{
       this.ngxService.stop();
@@ -132,7 +132,7 @@ export class ManageProductComponent implements OnInit {
   }
   this.productService.updateStatus(data).subscribe((response:any)=>{
     this.ngxService.stop();
-      this.responseMessage = response.error?.message;
+      this.responseMessage = response?.message;
       this.snackbarService.openSnackBar(this.responseMessage,"success");
   },(error)=>{
     this.ngxService.stop();

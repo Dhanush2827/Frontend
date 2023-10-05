@@ -22,6 +22,9 @@ export class SignupComponent implements OnInit {
   signupForm:any=FormGroup;
   responseMessage:any;
   appearance: MatFormFieldAppearance = 'fill';
+  passwordInputType = 'password';
+  confirmPasswordInputType = 'password';
+
 
 
 
@@ -51,6 +54,15 @@ if(this.signupForm.controls['password'].value != this.signupForm.controls['confi
   return false;
  }
 }
+
+togglePasswordVisibility() {
+  this.passwordInputType = this.passwordInputType === 'password' ? 'text' : 'password';
+}
+
+toggleConfirmPasswordVisibility() {
+  this.confirmPasswordInputType = this.confirmPasswordInputType === 'password' ? 'text' : 'password';
+}
+
 
   handleSubmit(){
   this.ngxService.start();

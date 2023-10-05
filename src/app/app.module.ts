@@ -29,9 +29,9 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig={
   text:"Loading...",
   textColor:"#FFFFF",
   textPosition:"center-center",
-  bgsColor:"#7b1fa2",
-  fgsColor:"#7b1fa2",
-  fgsType:SPINNER.squareJellyBox,
+  bgsColor:"#AAFF00",
+  fgsColor:"#AAFF00",
+  fgsType:SPINNER.squareLoader,
   fgsSize:100,
   hasProgressBar:false
 

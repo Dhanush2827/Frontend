@@ -35,6 +35,11 @@ export class LoginComponent implements OnInit {
         password:[null,[Validators.required]]
       });
 }
+
+togglePasswordVisibility() {
+  this.hide = !this.hide;
+}
+
 handleSubmit(){
   this.ngxService.start();
   var formData = this.loginForm.value;

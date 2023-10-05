@@ -92,7 +92,7 @@ export class ViewBillComponent implements OnInit {
       this.billService.delete(id).subscribe((response:any)=>{
         this.ngxService.stop();
         this.tableData();
-        this.responseMessage = response.error?.message;
+        this.responseMessage = response?.message;
         this.snackbarService.openSnackBar(this.responseMessage,"success");
       },(error:any)=>{
         this.ngxService.stop();
